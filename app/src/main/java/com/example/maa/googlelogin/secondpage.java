@@ -32,9 +32,8 @@ public class secondpage extends AppCompatActivity {
 
 
     Button button;
-    //FirebaseAuth mAuth;
    // FirebaseAuth.AuthStateListener mAuthListener;
-
+  //Firebase mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
