@@ -30,6 +30,7 @@ public class secondpage extends AppCompatActivity {
     private TextView id;
     private GoogleApiClient googleApiClient;
 
+
     Button button;
     //FirebaseAuth mAuth;
    // FirebaseAuth.AuthStateListener mAuthListener;
@@ -45,10 +46,14 @@ public class secondpage extends AppCompatActivity {
         name=(TextView)findViewById(R.id.Name);
         email=(TextView)findViewById(R.id.Email);
         id=(TextView)findViewById(R.id.Id);
-    button.setOnClickListener(new View.OnClickListener() {
+
+       button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            googleInScreen();
+            Intent intent=new Intent(secondpage.this,MainActivity.class);
+            // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+
         }
     });
         GoogleSignInOptions gso=new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
