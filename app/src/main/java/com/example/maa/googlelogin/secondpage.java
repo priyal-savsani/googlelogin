@@ -32,8 +32,9 @@ public class secondpage extends AppCompatActivity {
 
 
     Button button;
+    //Firebase mAuth;
    // FirebaseAuth.AuthStateListener mAuthListener;
-  //Firebase mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +85,6 @@ public class secondpage extends AppCompatActivity {
                 }
             });
         }
-
     }
     private void handleSignInResult(GoogleSignInResult result) {
         if (result.isSuccess()){
