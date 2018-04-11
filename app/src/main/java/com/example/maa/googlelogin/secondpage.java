@@ -72,7 +72,7 @@ public class secondpage extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        // mAuth.addAuthStateListener(mAuthListener);
+        //mAuth.addAuthStateListener(mAuthListener);
         OptionalPendingResult<GoogleSignInResult> opr=Auth.GoogleSignInApi.silentSignIn(googleApiClient);
         if(opr.isDone()){
             GoogleSignInResult result=opr.get();
